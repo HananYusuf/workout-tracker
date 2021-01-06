@@ -16,7 +16,7 @@ This is a workout tracker application that enable users to view, create and trac
 The program uses Mongo database with a Mongoose schema and Express to handle routes.
 
 ## Usage
-To run this application locally, Install the dependencies and verify database connection information. Run `node server.js` on your terminal to start the server and follow the link or open it on your browser to view the application on your computer(locally). The application running on Heroku can be found [Here]()
+To run this application locally, Install the dependencies and verify database connection information. Run `node server.js` on your terminal to start the server and follow the link or open it on your browser to view the application on your computer(locally). The application running on Heroku can be found [Here](https://afternoon-earth-23847.herokuapp.com/)
 
 
 ![](./image/img.png)

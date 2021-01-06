@@ -50,7 +50,7 @@ app.post("/api/workouts", (req, res) => {
 })
 
 app.put("/api/workouts/:id", (req, res) => {
-    db.Workout.update({_id: req.params.id},
+    db.Workout.updateOne({_id: req.params.id},
         {
             $push: {exercises: req.body}
         }).then(dbUpdated => {
