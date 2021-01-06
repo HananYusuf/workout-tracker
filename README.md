@@ -19,7 +19,7 @@ The program uses Mongo database with a Mongoose schema and Express to handle rou
 To run this application locally, Install the dependencies and verify database connection information. Run `node server.js` on your terminal to start the server and follow the link or open it on your browser to view the application on your computer(locally). The application running on Heroku can be found [Here]()
 
 
-![](image/img.png)
+![](./image/img.png)
 
 ## Contribution
 
