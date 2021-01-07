@@ -34,12 +34,22 @@ const WorkoutSchema = new Schema({
                 type: Number
             }
         }
-    ],
-    totalDuration:{
-        type:Number,
-        default:0
+    ]
+},
+    {
+        toJSON: {
+            // include any virtual properties when data is requested
+            virtuals: true
+        }
     }
-})
+);
+
+// Uses a dynamically-created property to schema that auto-calculates total duration
+WorkoutSchema.virtual("totalDuration").get(function () {
+    return this.exercises.reduce((total, exercise) => {
+        return total + exercise.duration;
+    }, 0);
+});
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
 
